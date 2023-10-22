@@ -1,0 +1,164 @@
+.banner {
+    background: linear-gradient(90deg , #000000dd , #000000dd), url(../../imgs/eletronica.jpeg) center center;
+    background-size: cover;
+    height: 44vh;
+    position: relative;
+}
+
+.linhas-d {
+    padding: .4rem 0;
+    border-top: .5px solid #d9d9d9;
+    /* margin-left: .1rem; */
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn-secondary {
+    background: #f1f1f1!important;
+    border-color: #f1f1f1!important;
+    color: black!important;
+    border-radius: 6px;
+}
+
+.btn-secondary:hover,.btn-secondary:focus-visible,.btn-secondary:focus-within, .btn-secondary:focus {
+    transition: .3s all ease-in-out;
+    background: #d8d8d8!important;
+    border-color: #d8d8d8!important;
+    color: black!important;
+    border-radius: 6px;
+}
+
+
+
+.banner .input-search {
+    position: absolute;
+    text-align: start;
+    background: white;
+    padding: .5rem 1rem;
+    margin: .2rem auto;
+    border-radius: 5px!important;
+    box-shadow: 1px 4px 9px #c4c4c4;
+    border: 1px solid #ffffff;
+    width: 80vw;
+    left: 0;
+    right: 0;
+    bottom: -1.4rem;
+}
+
+.banner .input-search .input-form  {
+    display: flex;
+}
+.banner .input-search .input-form input {
+    margin-left: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: .5rem .1rem;
+}
+
+
+.banner .input-search:focus-within {
+    border: 1px solid #efe700;
+    box-shadow: none;
+}
+
+.body-banner .titulo {
+    text-transform: uppercase;
+}
+
+.body-banner  {
+    position: absolute;
+    margin-top: 10vh !important;
+    text-align: center;
+    margin-left: 12%;
+    margin-right: auto;
+}
+
+
+.controllers {
+    margin-top: 4vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.controllers span:hover { 
+    color: #efe700;
+    transition: .2s ease-out;
+}
+
+.controllers span {
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: auto .5rem;
+}
+
+.controllers img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+@media (min-width: 600px) {
+    
+.body-banner  {
+    margin-left: 8vw;
+    width: 55vw!important;
+    text-align: start;
+}
+}
+
+@media (max-witdh: 600px) {
+    
+.logo-footer {
+    height: 2em!important;
+}
+}
+
+
+.btn-primary {
+    background: #f0f000!important;
+    border-color: #f0f000!important;
+    color: black;
+    border-radius: 6px;
+}
+
+.btn-primary:hover, .btn-primary:focus-within, .btn-primary:focus-visible {
+    transition: .3s all ease-in-out;
+    background: #e3dd2d!important;
+    border-color: #f0f000!important;
+    color: black!important;
+    border-radius: 6px;
+}
+
+.btn-secondary {
+    background: #f1f1f1!important;
+    border-color: #f1f1f1!important;
+    color: black!important;
+    border-radius: 6px;
+}
+
+.btn-secondary:hover,.btn-secondary:focus-visible,.btn-secondary:focus-within, .btn-secondary:focus {
+    transition: .3s all ease-in-out;
+    background: #d8d8d8!important;
+    border-color: #d8d8d8!important;
+    color: black!important;
+    border-radius: 6px;
+}
+
+.card-opt {
+    box-shadow: -2px 2px 12px #d6d6d6;
+    border-radius: 10px;
+}
+
+.search-by {
+    font-size: smaller;
+    color: #bdbdbd!important;
+}
+
+.form-control:focus-within, .form-control:focus-visible, .form-control:focus{
+    border-color: #e3dd2d;
+}
