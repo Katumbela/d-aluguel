@@ -23,6 +23,7 @@ function DetalheCurso({ nomee, emaill, cart }) {
     fetchData();
   }, []); // o segundo argumento do useEffect é um array de dependências, coloque aqui qualquer dependência necessária
 
+
   const cc = cursos.filter(p => p.id == id);
   console.log(cc);
   return (
