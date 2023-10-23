@@ -88,16 +88,22 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
       ...projeto,
       [event.target.name]: event.target.value,
     });
-
-    // Verifica se todos os campos estão preenchidos
-    const camposPreenchidos = Object.values(projeto).every((campo) => campo.trim() !== '');
+    const camposPreenchidos = Object.values(projeto).every((campo) => {
+      // Verifica se o campo é uma string antes de chamar trim()
+      if (typeof campo === 'string') {
+        return campo.trim() !== '';
+      }
+      // Se não for uma string, considera como preenchido
+      return true;
+    });
     setTodosCamposPreenchidos(camposPreenchidos);
+    
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const user = firebase.auth().currentUser;
-    const { email, displayName, uid } = user;
+    const { email, photo, displayName, uid } = user;
 
     // Verifique se projeto.imagens está definido antes de mapear
     const imagens = projeto.imagens ? projeto.imagens.map((imagem) => imagem.name) : [];
@@ -108,6 +114,7 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
       nome: displayName,
       fotoUrls: imagens,
       uid: uid,
+      photo: user?.photo || '',
     })
       .then(() => {
         toast.info('Projeto adicionado com sucesso!');
@@ -143,7 +150,7 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
         // Atualiza o estado do projeto incrementalmente
         setProjeto((prevProjeto) => ({
           ...prevProjeto,
-          imagens: [...prevProjeto.imagens, ...urlsImagens],
+          imagens: [...(prevProjeto.imagens || []), ...urlsImagens],
         }));
       })
       .catch((erro) => {
@@ -151,13 +158,14 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
       });
   };
   
+  
 
 
 
   return (
     <div className="">
       <Header cart={cart} nomee={nomee} emaill={emaill} />
-      <BannerPreto>Adicionar Projeto</BannerPreto>
+      <BannerPreto>Adicionar Artigo</BannerPreto>
       <br />
       <br />
       <br />
@@ -352,7 +360,7 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
 
           </div>
           <div className="d-grid mt-4">
-            <button type="submit" className="btn btn-primary btn-block text-dark" >
+            <button disabled={!todosCamposPreenchidos} type="submit" className="btn btn-primary btn-block text-dark" >
               Enviar Artigo
             </button>
           </div>

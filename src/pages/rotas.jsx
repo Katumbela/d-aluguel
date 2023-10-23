@@ -13,6 +13,9 @@ import Faqs from "./faqs";
 import Itens from "./itens_permitidos";
 import Reembolso from "./reembolso";
 import Seguro from "./seguro_aluguel";
+import EnviarMensagem from "./enviar_mensagem";
+import Mensagens from "./mensagens";
+import Conversa from "./conversa";
 
 
 const RotasPT = (props) => {
@@ -23,8 +26,12 @@ const RotasPT = (props) => {
         <BrowserRouter>
             <UserProvider>
                 <Routes >
+
+                    <Route path="/pt/enviar-mensagem/:uid" exact element={<EnviarMensagem  nomee={nomee} emaill={emaill} cart={cart} />} />
                     <Route element={<Home nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/" />
-                    <Route element={<NotFoundPage/>} path="" />
+                    <Route element={<Mensagens nomee={nomee} emaill={emaill} cart={cart}/>} path="/pt/mensagens" />
+                    <Route element={<Conversa nomee={nomee} emaill={emaill} cart={cart}/>} path="/pt/conversa/:uid" />
+                    <Route element={<NotFoundPage nomee={nomee} emaill={emaill} cart={cart}/>}  />
                     <Route element={<Contactar  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/contactar" exact />
                     <Route element={<Faqs  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/faqs" exact />
                     <Route element={<Login cart={cart}  emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/pt/login" exact />

@@ -40,6 +40,7 @@ const fetchDataFromFirestore = async () => {
         oitoh: projecto.oitoh,
         semana: projecto.semana,
         uid: projecto.uid,
+        photo: projecto.photo,
         ummes: projecto.ummes,
       };
     });
