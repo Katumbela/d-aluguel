@@ -6,7 +6,7 @@ import './card_serv.css';
 
 const CardCurso = ({ c }) => {
 
-    const { docId, nome, ano, imagens,modelo, marca, minimo, endereco, userName, categoria, review, preco, duracao, lastUpdate, img1 } = c;
+    const { docId, nome, ano, imagens,modelo, marca, minimo, endereco, userName, oitoh, review, preco, duracao, lastUpdate, img1 } = c;
 
     return (
         <NavLink style={{textDecoration:'none'}} title={'Clique para ver'+docId} className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + docId}>
@@ -30,7 +30,7 @@ const CardCurso = ({ c }) => {
                             <span className="">Marca </span>
                         </div>
                         <div className="col-6">
-                            <span className="">{marca}</span>
+                            <span className="">{oitoh}</span>
                         </div>
                     </div>
                     <div className="row linhas-d">
@@ -54,7 +54,7 @@ const CardCurso = ({ c }) => {
                             <span className="">Apartir de</span>
                         </div>
                         <div className="col-6">
-                            <span className="">{preco} Kz</span>
+                            <span className="">{oitoh} Kz</span>
                         </div>
                     </div>
                 </div>

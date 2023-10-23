@@ -96,7 +96,7 @@ function DetalheCurso({ nomee, emaill, cart }) {
             <p className="text-secondary f-12">Postado Internamente</p>
           </div>
           <div className='d-flex my-auto'>
-          <a href={`/pt/enviar-mensagem/${cc[0]?.uid}`} className='text-dark my-auto me-2'>Enviar <i className="bi bi-envelope"></i></a>
+          <a href={`tel:${cc[0]?.tel}`} className='text-dark my-auto me-2'>Falar com dono <i className="bi bi-phone"></i></a>
             <img className='user-p my-auto' src={use.photo} height={'40em'} alt="" />
           </div>
         </div>
