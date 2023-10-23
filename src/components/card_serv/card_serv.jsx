@@ -10,11 +10,11 @@ const CardCurso = ({ c }) => {
 
     return (
         <NavLink style={{textDecoration:'none'}} title={'Clique para ver'+docId} className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + docId}>
-            <div className=" d-flex w-100">
-                <div className="serv_img">
-                    <img  style={{height: '12em', width: '15em'}} src={imagens[0].url} alt="pequeno engenheiro" />
+            <div className=" row w-100">
+                <div className="serv_img col-12 col-sm-4">
+                    <img className='w-100' src={imagens[0].url} alt="pequeno engenheiro" />
                 </div>
-                <div className="px-2 ms-2 w-100 text-secondary text-start">
+                <div className="px-2 col-12 col-sm-8 ms-2 w-100 text-secondary text-start">
                     <h4 className=' text-dark'>{nome}</h4>
                     <div className="row linhas-d">
                         <div className="col-6">

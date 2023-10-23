@@ -44,10 +44,7 @@ const Banner = () => {
           </h2>
           <div className="controllers d-flex">
             <div data-bs-toggle="modal" data-bs-target="#modal2"  className="homeowner d-flex">
-              <img src={play} alt="" /> <span>Proprietario ?  </span>
-            </div>
-            <div data-bs-toggle="modal" data-bs-target="#modal" className="contractor d-flex">
-              <img src={play} alt="" /> <span>Prestador ?  </span>
+              <img src={play} alt="" /> <span>Apresentação   </span>
             </div>
           </div>
 
