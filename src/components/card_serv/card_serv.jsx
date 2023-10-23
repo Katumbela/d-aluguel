@@ -15,7 +15,7 @@ const CardCurso = ({ c }) => {
                     {/* <img src={img} alt="pequeno engenheiro" /> */}
                 </div>
                 <div className="px-2 ms-2 w-100 text-secondary text-start">
-                    <h4 className=' text-dark'>{marca}</h4>
+                    <h4 className=' text-dark'>{nome}</h4>
                     <div className="row linhas-d">
                         <div className="col-6">
                             <span className="">Marca </span>
