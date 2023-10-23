@@ -12,7 +12,7 @@ import Loader from '../components/loader';
 import Accordion from '../components/accordion';
 
 const Faqs = ({ emaill, nomee, cart }) => {
-    document.title = 'Formulario de Contacto | AROTEC';
+    document.title = 'Formulario de Contacto | D-ALUGUEL';
 
     const [nomeCompleto, setNC] = useState('');
     const [telefone, setTel] = useState('');

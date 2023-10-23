@@ -75,26 +75,26 @@ function Footer() {
                         <div className="col-12 my-2 my-md-1 col-sm-2 col-md-2 text-start">
                             <h5 className="text-white">Conta</h5>
                             <ul>
-                                <li><NavLink className="footerlink" to="/pt/academia">Entrar</NavLink></li>
-                                <li><NavLink className="footerlink" to="/pt/loja">Criar conta</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/login">Entrar</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/login">Criar conta</NavLink></li>
 
                             </ul>
                         </div>
                         <div className="col-12 my-2 my-md-1 col-sm-2 col-md-2 text-start">
                             <h5 className="text-white">Reportes</h5>
                             <ul>
-                                <li><NavLink className="footerlink" to="/pt/academia">De prestadores</NavLink></li>
-                                <li><NavLink className="footerlink" to="/pt/loja">De aquisitores</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/prestadores">De prestadores</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/aquisitores">De aquisitores</NavLink></li>
 
                             </ul>
                         </div>
                         <div className="col-12 my-2 my-md-1 col-sm-3 col-md-3 text-start">
                             <h5 className="text-white">Regulamentos</h5>
                             <ul>
-                                <li><NavLink className="footerlink" to="/pt/academia">Termos de uso</NavLink></li>
-                                <li><NavLink className="footerlink" to="/pt/loja">Politicas de reembolso</NavLink></li>
-                                <li><NavLink className="footerlink" to="/pt/empresas">Seguro de aluguel</NavLink></li>
-                                <li><NavLink className="footerlink" to="/pt/empresas">Itens proibidos</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/politicas">Termos & Políticas</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/reembolso">Politicas de reembolso</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/seguro">Seguro de aluguel</NavLink></li>
+                                <li><NavLink className="footerlink" to="/pt/itens">Itens proibidos</NavLink></li>
 
                             </ul>
                         </div>

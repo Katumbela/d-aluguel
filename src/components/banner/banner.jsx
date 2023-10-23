@@ -6,10 +6,7 @@ import play from '../../imgs/play.png'
 import v1 from '../../video/v1.mp4'
 import v2 from '../../video/v2.mp4'
 import { Fade } from 'react-awesome-reveal';
-import produtos from '../../pages/lista_prods';
-import equipamentos from '../../pages/lista_cursos';
 import CardCurso from '../card_serv/card_serv';
-import Card from '../loja/card';
 import getCursosData from '../../pages/lista_cursos';
 
 const Banner = () => {

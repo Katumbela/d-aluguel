@@ -1,6 +1,6 @@
 {
-  "short_name": "AROTEC SU",
-  "name": "AROTEC SU PLATFORM",
+  "short_name": "D'ALUGUEL PLATFORM",
+  "name": "D'ALUGUEL COMPANY",
   "icons": [
     {
       "src": "a.png",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0044E3",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

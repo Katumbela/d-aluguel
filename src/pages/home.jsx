@@ -6,7 +6,6 @@ import logo from '../imgs/icone.png';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Banners from '../components/banners';
-import Destaque from '../components/cursos_destaque';
 import Banner from '../components/banner/banner';
 import CookieConsent from 'react-cookie-consent';
 import { useContext, useEffect, useRef, useState } from 'react';
@@ -15,14 +14,11 @@ import firebase from 'firebase/compat/app';
 import { db } from './firebase';
 import okupa from '../imgs/arobot.png'
 import axios from 'axios';
-import Bandeira from '../components/bandeira';
 import { NavLink } from 'react-router-dom';
 import v1 from '../imgs/anims/av1.mp4'
 import peq_eng from '../imgs/banner-p.png';
 import arduino from '../imgs/arduino.jpeg';
 import eletronica from '../imgs/eletronica.jpeg';
-import OwlCarousel from 'react-owl-carousel';
-import Animat from '../components/animations';
 import a1 from '../imgs/anims/a1.jpg'
 import a2 from '../imgs/anims/a2.jpg'
 import a3 from '../imgs/anims/a3.jpg'
@@ -72,8 +68,6 @@ const Home = ({ cart, nomee, emaill }) => {
     }
 
 
-    fetchPlayersL();
-
 
     fetchPlayers();
 
@@ -98,22 +92,6 @@ const Home = ({ cart, nomee, emaill }) => {
       const snapshot = await db.collection('players').where('pontos', '>', 15).orderBy('pontos', 'desc').limit(3).get();
       const playerData = snapshot.docs.map((doc) => doc.data());
       setPlayers(playerData);
-    } catch (error) {
-      console.error('Erro ao buscar os jogadores:', error);
-    }
-  };
-
-
-
-  const [playersL, setPlayersL] = useState([]);
-
-
-  // Função para buscar os jogadores ordenados por pontuação
-  const fetchPlayersL = async () => {
-    try {
-      const snapshot = await db.collection('players').where('pontos', '<', 15).orderBy('pontos', 'asc').limit(3).get();
-      const playerData = snapshot.docs.map((doc) => doc.data());
-      setPlayersL(playerData);
     } catch (error) {
       console.error('Erro ao buscar os jogadores:', error);
     }

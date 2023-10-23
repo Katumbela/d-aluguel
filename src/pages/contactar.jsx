@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/loader';
 
 const Contactar = ({emaill,nomee, cart }) => {
-  document.title = 'Formulario de Contacto | AROTEC';
+  document.title = 'Formulario de Contacto | D-ALUGUEL';
   
   const [nomeCompleto, setNC] = useState('');
   const [telefone, setTel] = useState('');

@@ -102,7 +102,7 @@ const Login = ({ setNomee, setEmaill , cart, nomee, emaill}) => {
                             <center>
                                 {user ? (
                                     <div>
-                                        <p className='text-primary'>Você já está logado como <b> {user.displayName}</b> <br />
+                                        <p className='text-primary'>Você está logado como <b> {user.displayName}</b> <br />
 
                                             <span className="text-secondary">
                                                 Email: {user.email}
@@ -127,7 +127,7 @@ const Login = ({ setNomee, setEmaill , cart, nomee, emaill}) => {
                         <br />
                         <center>
 
-                            <NavLink className={'btn btn-outline-secondary'} to={'/pt'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
+                            <NavLink className={'btn btn-secondary'} to={'/pt'} >Pagina Inicial </NavLink>
                         </center>
                     </div>
                 </div>

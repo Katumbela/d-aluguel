@@ -1,5 +1,5 @@
 {
-  "name": "d-aluguel",
+  "name": "arotec-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,8 +22,6 @@
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
     "react-flags-select": "^2.2.3",
-    "react-owl-carousel": "^2.3.3",
-    "react-owl-carousel2": "^0.3.0",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
@@ -38,8 +36,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "install": "npm install --legacy-peer-deps",
-    "build": "npm run install && npm run build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

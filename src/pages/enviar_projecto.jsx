@@ -353,7 +353,7 @@ document.title = "Adicionar material/equipamento | D'Aluguel"
           </div>
           <div className="d-grid mt-4">
             <button type="submit" className="btn btn-primary btn-block text-dark" >
-              Enviar projeto
+              Enviar Artigo
             </button>
           </div>
         </form>
