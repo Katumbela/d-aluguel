@@ -141,7 +141,7 @@ const Header = (props) => {
                                 <NavLink to="/pt/faqs"> FAQ</NavLink>
                             </li>
 
-                            {use.nome !== '' ?
+                            {use.name !== '' ?
                                 <li>
                                     <NavLink to="/pt/add-artigo"> Add Artigo</NavLink>
                                 </li>
@@ -160,14 +160,6 @@ const Header = (props) => {
                                     <NavLink to="/pt/login"> Entrar</NavLink>
                                 </li>
 
-                            }
-
-                            {use.name == '' ?
-                                <li>
-                                    <NavLink to="/pt/login"> Cadastro</NavLink>
-                                </li>
-                                :
-                                <span></span>
                             }
 
                         </ul>
