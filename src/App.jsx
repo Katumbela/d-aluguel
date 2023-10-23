@@ -73,6 +73,25 @@ function App() {
   const [language, setLanguage] = useState('');
 
 
+  const redirecionarURL = () => {
+    const currentPath = window.location.pathname;
+
+    if (currentPath === '/') {
+      window.location.pathname = '/pt';
+    }
+  };
+
+  useEffect(() => {
+    redirecionarURL();
+
+    // Defina o idioma inicial com base na rota atual
+    const currentPath = window.location.pathname;
+    if (currentPath.startsWith('/en')) {
+      setLanguage('en');
+    } else {
+      setLanguage('pt');
+    }
+  }, []);
  
   return (
     <React.Fragment>

@@ -3,9 +3,14 @@
     border-radius: 5px!important;
 }
 
+.serv_img img {
+   max-height: 15em!important;
+}
+
 .cc {
     border-radius: 5px!important;
 }
+
 
 .cc:hover {
    box-shadow: none!important;

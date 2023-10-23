@@ -151,7 +151,7 @@ const Header = (props) => {
 
                             {use.name !== '' ?
                                 <li>
-                                <NavLink to="/pt/login">{use.name?.split(' ')[0]}</NavLink>
+                                <NavLink to="/pt/perfil">{use.name?.split(' ')[0]}</NavLink>
                               </li>
                                :
 
