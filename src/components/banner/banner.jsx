@@ -40,7 +40,7 @@ const Banner = () => {
       <div className="banner">
         <div className="body-banner  container w-75">
           <h2 className="text-white titulo">
-            Alugue equipamentos e diversos para o seu próximo projecto ou aventura
+            Alugue equipamentos e diversos para o seu próximo projecto
           </h2>
           <div className="controllers d-flex">
             <div data-bs-toggle="modal" data-bs-target="#modal2"  className="homeowner d-flex">
