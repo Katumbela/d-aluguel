@@ -6,10 +6,10 @@ import './card_serv.css';
 
 const CardCurso = ({ c }) => {
 
-    const { id, nome, ano, imagens,modelo, marca, minimo, idUser, userName, categoria, review, preco, duracao, lastUpdate, img1 } = c;
+    const { docId, nome, ano, imagens,modelo, marca, minimo, idUser, userName, categoria, review, preco, duracao, lastUpdate, img1 } = c;
 
     return (
-        <NavLink style={{textDecoration:'none'}} title='Clique para ver o artigo/equipamento' className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + id}>
+        <NavLink style={{textDecoration:'none'}} title={'Clique para ver'+docId} className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + docId}>
             <div className=" d-flex w-100">
                 <div className="serv_img">
                     <img  style={{height: '12em', width: '15em'}} src={imagens[0].url} alt="pequeno engenheiro" />

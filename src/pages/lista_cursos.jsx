@@ -9,6 +9,9 @@ const fetchDataFromFirestore = async () => {
 
     const data = querySnapshot.docs.map((doc) => {
       const projecto = doc.data();
+      
+      // Obtendo o ID do documento diretamente
+      const docId = doc.id;
 
       const fotoUrls = projecto.fotoUrls.map((url, index) => ({
         index,
@@ -27,7 +30,8 @@ const fetchDataFromFirestore = async () => {
         email: projecto.email,
         endereco: projecto.endereco,
         fotoUrls,
-        id: projecto.id,
+        // Usando o ID do documento
+        docId,
         imagens,
         marca: projecto.marca,
         minimo: projecto.minimo,

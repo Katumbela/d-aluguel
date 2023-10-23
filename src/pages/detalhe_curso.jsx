@@ -24,7 +24,7 @@ function DetalheCurso({ nomee, emaill, cart }) {
   }, []); // o segundo argumento do useEffect é um array de dependências, coloque aqui qualquer dependência necessária
 
 
-  const cc = cursos.filter(p => p.id == id);
+  const cc = cursos.filter(p => p.docId == id);
   console.log(cc);
   return (
     <>
