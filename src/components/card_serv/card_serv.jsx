@@ -9,10 +9,10 @@ const CardCurso = ({ c }) => {
     const { id, nome, ano, imagens,modelo, marca, minimo, idUser, userName, categoria, review, preco, duracao, lastUpdate, img1 } = c;
 
     return (
-        <NavLink title='Clique para ver o artigo/equipamento' className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + id}>
+        <NavLink style={{textDecoration:'none'}} title='Clique para ver o artigo/equipamento' className=" py-3 cc navlink col-12 my-3 col-xxl-6 shadow" to={"/pt/platform/equipement/daluguel/" + id}>
             <div className=" d-flex w-100">
-                <div style={{ background: 'url(' + imagens[0].url + ') center center', backgroundSize: 'cover', borderRadius: '10px', backgroundRepeat: 'no-repeat', height: '12em', width: '15em' }} className="serv_img">
-                    {/* <img src={img} alt="pequeno engenheiro" /> */}
+                <div className="serv_img">
+                    <img  style={{height: '12em', width: '15em'}} src={imagens[0].url} alt="pequeno engenheiro" />
                 </div>
                 <div className="px-2 ms-2 w-100 text-secondary text-start">
                     <h4 className=' text-dark'>{nome}</h4>
