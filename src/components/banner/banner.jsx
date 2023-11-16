@@ -31,12 +31,14 @@ const Banner = () => {
     setSearchTerm2(e.target.value);
   }
 
+  
   const filteredEquipements = cursos.filter(
     (curso) =>
       curso.nome.toLowerCase().includes(searchTerm.toLowerCase()) &&
       (searchTerm2 === "" ||
         curso.endereco.toLowerCase().includes(searchTerm2.toLowerCase()))
   );
+
 
   const listarTudo = () => {
     setSearchTerm("");

@@ -5,9 +5,11 @@ const fetchDataFromFirestore = async () => {
   const projectosCollection = collection(db, 'projetos');
 
   try {
+
     const querySnapshot = await getDocs(projectosCollection);
 
     const data = querySnapshot.docs.map((doc) => {
+      
       const projecto = doc.data();
       
       // Obtendo o ID do documento diretamente
