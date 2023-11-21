@@ -156,7 +156,7 @@ function DetalheCurso({ nomee, emaill, cart }) {
                         <tr>
                           <td>8h</td>
                           <td>{cc[0]?.oitoh}</td>
-                        </tr>
+                        </tr> 
                         <tr>
                           <td>1 dia</td>
                           <td>{cc[0]?.dia}</td>
